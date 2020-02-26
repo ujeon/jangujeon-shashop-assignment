@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "shashop-assignment": {
@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "shashop-assignment"
+    }
+  },
+  "defaultProject": "shashop-assignment",
+  "cli": {
+    "analytics": "1874cea5-3baa-41e0-b5c0-f6fca521941e"
+  }
 }

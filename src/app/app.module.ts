@@ -6,9 +6,11 @@ import { NgxsLoggerPluginModule } from "@ngxs/logger-plugin";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
+import { CreateComponent } from './components/create/create.component';
+import { IndexComponent } from './components/index/index.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, CreateComponent, IndexComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
