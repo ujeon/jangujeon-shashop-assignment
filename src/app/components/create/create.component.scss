@@ -1,0 +1,33 @@
+.card {
+  &-body {
+    form {
+      & > .form-group {
+        & > .form-control {
+          margin-bottom: 5%;
+        }
+
+        &:last-child {
+          text-align: right;
+        }
+
+        & > .btn {
+          &.btn-primary {
+            margin-top: 5%;
+            background-color: #a08b7a;
+            border: 1px #a08b7a solid;
+
+            &:hover,
+            &:active {
+              background-color: #957d6a;
+              border: 1px #957d6a solid;
+            }
+
+            &:not(:last-child) {
+              margin-right: 10%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
