@@ -1,13 +1,9 @@
 {
   "hosting": [
     {
-      "target": "shashop-assignment",
-      "public": "dist/shashop-assignment",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ],
+      "target": "shaashop-assignment",
+      "public": "dist/shaashop-assignment",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
       "rewrites": [
         {
           "source": "**",

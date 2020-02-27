@@ -1,0 +1,17 @@
+.navigation {
+  width: 100%;
+  height: 20vh;
+  padding: 1.5%;
+  position: fixed;
+
+  &__icon {
+    width: 5%;
+    border-radius: 50%;
+  }
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  padding: 10% 2% 10% 2%;
+}

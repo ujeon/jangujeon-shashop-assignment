@@ -56,9 +56,9 @@ export class UserState {
 
     if (!isExist) {
       if (nameValid[0].value === "beforeCheck") {
-        alert("이름 중복확인을 해주세요");
+        alert("이름 👤 중복확인을 해주세요 🔍");
       } else if (emailValid[0].value === "beforeCheck") {
-        alert("이메일 중복확인을 해주세요");
+        alert("이메일 ✉️ 중복확인을 해주세요 🔍");
       }
 
       if (
@@ -71,11 +71,11 @@ export class UserState {
       }
 
       if (nameValid[0].value === "exist" || emailValid[0].value === "exist") {
-        alert("이름 혹은 이메일 중복 확인을 다시 한 번 부탁드립니다.");
+        alert("이름 혹은 이메일 중복 확인을 다시 한 번 부탁드립니다. 🧐");
       }
     } else {
       alert(
-        "이미 등록된 사용자입니다. 이름과 이메일을 다시 한 번 확인해주세요."
+        "이미 등록된 사용자입니다. 이름과 이메일을 다시 한 번 확인해주세요. 🧐"
       );
     }
   }
@@ -105,13 +105,13 @@ export class UserState {
           i === state.users.length - 1
         ) {
           alert(
-            "입력하신 정보와 일치하는 사용자 정보가 존재하지 않아 삭제할 수 없습니다."
+            "입력하신 정보와 일치하는 사용자 정보가 존재하지 않아 삭제할 수 없습니다. 😓"
           );
         }
       }
     } else {
       alert(
-        "입력하신 정보와 일치하는 사용자 정보가 존재하지 않아 삭제할 수 없습니다."
+        "입력하신 정보와 일치하는 사용자 정보가 존재하지 않아 삭제할 수 없습니다. 😓"
       );
     }
   }
@@ -147,7 +147,7 @@ export class ValidState {
     if (currentUserList.length > 0) {
       for (let i = 0; 0 <= currentUserList.length - 1; i++) {
         if (currentUserList[i].name === payload.name) {
-          alert("이미 등록된 이름입니다.");
+          alert("이미 등록된 이름입니다. 🤭");
           patchState({
             isNameExist: [{ value: "exist" }]
           });
@@ -156,7 +156,7 @@ export class ValidState {
           currentUserList[i].name !== payload.name &&
           i === currentUserList.length - 1
         ) {
-          alert("등록 가능한 이름입니다.");
+          alert("등록 가능한 이름입니다. 🤗");
           patchState({
             isNameExist: [{ value: "unExist" }]
           });
@@ -164,7 +164,7 @@ export class ValidState {
         }
       }
     } else {
-      alert("등록 가능한 이름입니다.");
+      alert("등록 가능한 이름입니다. 🤗");
       patchState({
         isNameExist: [{ value: "unExist" }]
       });
@@ -181,7 +181,7 @@ export class ValidState {
     if (currentUserList.length > 0) {
       for (let i = 0; 0 <= currentUserList.length - 1; i++) {
         if (currentUserList[i].email === payload.email) {
-          alert("이미 사용중인 이메일입니다.");
+          alert("이미 사용중인 이메일입니다. 🤭");
           patchState({
             isEmailExist: [{ value: "exist" }]
           });
@@ -190,7 +190,7 @@ export class ValidState {
           currentUserList[i].email !== payload.email &&
           i === currentUserList.length - 1
         ) {
-          alert("사용가능한 이메일입니다.");
+          alert("사용가능한 이메일입니다. 🤗");
           patchState({
             isEmailExist: [{ value: "unExist" }]
           });
@@ -198,7 +198,7 @@ export class ValidState {
         }
       }
     } else {
-      alert("사용가능한 이메일입니다.");
+      alert("사용가능한 이메일입니다. 🤗");
       patchState({
         isEmailExist: [{ value: "unExist" }]
       });

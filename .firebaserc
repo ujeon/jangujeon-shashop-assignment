@@ -1,9 +1,9 @@
 {
   "targets": {
-    "jangujeon-shashop-assignment": {
+    "jangujeon-shaashop-assignment": {
       "hosting": {
-        "shashop-assignment": [
-          "jangujeon-shashop-assignment"
+        "shaashop-assignment": [
+          "jangujeon-shaashop-assignment"
         ]
       }
     }
