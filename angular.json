@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "shashop-assignment": {
+    "shaashop-assignment": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,19 +17,14 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/shashop-assignment",
+            "outputPath": "dist/shaashop-assignment",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -66,18 +61,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "shashop-assignment:build"
+            "browserTarget": "shaashop-assignment:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "shashop-assignment:build:production"
+              "browserTarget": "shaashop-assignment:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "shashop-assignment:build"
+            "browserTarget": "shaashop-assignment:build"
           }
         },
         "test": {
@@ -87,13 +82,8 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.scss"],
             "scripts": []
           }
         },
@@ -105,20 +95,18 @@
               "tsconfig.spec.json",
               "e2e/tsconfig.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "shashop-assignment:serve"
+            "devServerTarget": "shaashop-assignment:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "shashop-assignment:serve:production"
+              "devServerTarget": "shaashop-assignment:serve:production"
             }
           }
         },
@@ -129,7 +117,7 @@
       }
     }
   },
-  "defaultProject": "shashop-assignment",
+  "defaultProject": "shaahop-assignment",
   "cli": {
     "analytics": "1874cea5-3baa-41e0-b5c0-f6fca521941e"
   }
