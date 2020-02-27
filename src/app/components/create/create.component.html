@@ -45,6 +45,13 @@
         >
           Create User
         </button>
+        <button
+          (click)="deleteUser(name.value, email.value)"
+          class="btn btn-primary"
+          [disabled]="angForm.pristine || angForm.invalid"
+        >
+          Delete User
+        </button>
       </div>
     </form>
   </div>
