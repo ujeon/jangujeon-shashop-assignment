@@ -1,5 +1,8 @@
 import { Component, OnInit } from "@angular/core";
+import { Store } from "@ngxs/store";
 import { FormGroup, FormBuilder, Validators } from "@angular/forms";
+
+import { AddUser } from "../../actions/user.action";
 
 @Component({
   selector: "app-create",
@@ -9,7 +12,7 @@ import { FormGroup, FormBuilder, Validators } from "@angular/forms";
 export class CreateComponent implements OnInit {
   angForm: FormGroup;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private store: Store) {
     this.createForm();
   }
 
@@ -21,7 +24,7 @@ export class CreateComponent implements OnInit {
   }
 
   addUser(name, email) {
-    console.log(name, email);
+    this.store.dispatch(new AddUser({ name, email }));
   }
 
   ngOnInit() {}
