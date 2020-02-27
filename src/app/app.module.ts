@@ -12,14 +12,14 @@ import { AppComponent } from "./app.component";
 import { CreateComponent } from "./components/create/create.component";
 import { IndexComponent } from "./components/index/index.component";
 
-import { UserState } from "./state/user.state";
+import { UserState, ValidState } from "./state/user.state";
 
 @NgModule({
   declarations: [AppComponent, CreateComponent, IndexComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxsModule.forRoot([UserState]),
+    NgxsModule.forRoot([UserState, ValidState]),
     NgxsReduxDevtoolsPluginModule.forRoot(),
     NgxsLoggerPluginModule.forRoot(),
     ReactiveFormsModule
