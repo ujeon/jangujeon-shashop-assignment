@@ -1,0 +1,72 @@
+<div class="card">
+  <div class="card-body">
+    <form [formGroup]="angForm">
+      <div class="form-group">
+        <label class="col-md-4">이름</label>
+        <input type="text" class="form-control" formControlName="name" #name />
+        <div
+          *ngIf="
+            angForm.controls['name'].invalid &&
+            (angForm.controls['name'].dirty || angForm.controls['name'].touched)
+          "
+          class="alert alert-danger"
+        >
+          <div *ngIf="angForm.controls['name'].errors.required">
+            이름을 입력해주세요 😀
+          </div>
+        </div>
+        <button
+          (click)="checkUserName(name.value)"
+          class="btn btn-secondary"
+          [disabled]="angForm.pristine || angForm.invalid"
+        >
+          이름 중복 확인
+        </button>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">이메일</label>
+        <input
+          type="email"
+          class="form-control"
+          formControlName="email"
+          #email
+        />
+        <div
+          *ngIf="
+            angForm.controls['email'].invalid &&
+            (angForm.controls['email'].dirty ||
+              angForm.controls['email'].touched)
+          "
+          class="alert alert-danger"
+        >
+          <div *ngIf="angForm.controls['email'].errors.required">
+            이메일을 입력해주세요 😀
+          </div>
+        </div>
+        <button
+          (click)="checkUserEmail(email.value)"
+          class="btn btn-secondary"
+          [disabled]="angForm.pristine || angForm.invalid"
+        >
+          이메일 중복 확인
+        </button>
+      </div>
+      <div class="form-group">
+        <button
+          (click)="addUser(name.value, email.value)"
+          class="btn btn-primary"
+          [disabled]="angForm.pristine || angForm.invalid"
+        >
+          사용자 생성
+        </button>
+        <button
+          (click)="deleteUser(name.value, email.value)"
+          class="btn btn-primary"
+          [disabled]="angForm.pristine || angForm.invalid"
+        >
+          사용자 삭제
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
