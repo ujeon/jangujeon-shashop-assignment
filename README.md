@@ -6,7 +6,7 @@
 
 ### 튜토리얼 완성
 
-![]('./src/assets/images/basic.png')
+![](https://www.dropbox.com/s/3esl7yt3fa84qcp/basic.png?dl=0)
 
 기본 튜토리얼을 완성한 모습입니다.
 
@@ -14,13 +14,13 @@
 
 ### 삭제 기능 버튼 추가
 
-![]('./src/assets/images/extra-delete-feature1.png')
-![]('./src/assets/images/extra-delete-feature2.png')
+![](https://www.dropbox.com/s/0uorylnijsbfr6g/extra-delete-feature1.png?dl=0)
+![](https://www.dropbox.com/s/fyl1y18ofntkiw4/extra-delete-feature2.png?dl=0)
 
 삭제 기능을 하는 버튼을 추가한 모습입니다.
 
 ### 중복 체크 기능 버튼 추가
 
-![]('./src/assets/images/extra-doubleCheck-feature.png)
+![](https://www.dropbox.com/s/5dk8979c02z911o/extra-doubleCheck-feature.png?dl=0)
 
 사용자 이름과 이메일 중복 체크를 확인하는 버튼을 추가한 모습입니다.
