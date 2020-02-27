@@ -2,7 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { Store } from "@ngxs/store";
 import { FormGroup, FormBuilder, Validators } from "@angular/forms";
 
-import { AddUser } from "../../actions/user.action";
+import { AddUser, DeleteUser } from "../../actions/user.action";
 
 @Component({
   selector: "app-create",
@@ -25,6 +25,10 @@ export class CreateComponent implements OnInit {
 
   addUser(name, email) {
     this.store.dispatch(new AddUser({ name, email }));
+  }
+
+  deleteUser(name, email) {
+    this.store.dispatch(new DeleteUser({ name, email }));
   }
 
   ngOnInit() {}
