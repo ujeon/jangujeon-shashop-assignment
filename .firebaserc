@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "jangujeon-shashop-assignment": {
+      "hosting": {
+        "shashop-assignment": [
+          "jangujeon-shashop-assignment"
+        ]
+      }
+    }
+  }
+}
